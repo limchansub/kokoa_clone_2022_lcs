@@ -1,0 +1,97 @@
+body{
+    height:100vh;
+    background-color: #7fbabd;
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  .father{
+    width:50%;
+    height:50%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .circle{
+    display: flex;
+    width:140px;
+    height:140px;
+    align-items:center;
+    justify-content: space-evenly;
+    animation-delay: 0.5s;
+    animation-duration : 1s;
+    animation-iteration-count: infinite;
+    animation-name: rotate;
+  
+  }
+  .in-circle{
+    background: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  .rect{
+    display: flex;
+    width:100px;
+    height:100px;
+    align-items:center;
+    justify-content: space-evenly;
+  
+  }
+  .in-rect{
+    background: white;
+    width: 10px;
+    height: 40px;
+    animation-direction: alternate;
+    animation-duration : 0.5s;
+    animation-iteration-count: infinite;
+    animation-name: scale;
+  }
+  
+  .in-rect:nth-child(2){
+    animation-delay:0.1s ;
+  }
+  .in-rect:nth-child(3){
+    animation-delay:0.2s ;
+  }
+  .in-rect:nth-child(4){
+    animation-delay:0.3s ;
+  }
+  .in-rect:nth-child(5){
+    animation-delay:0.4s ;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(180deg);
+    }
+    100% {
+     
+      transform: rotate(180deg);
+    }
+    
+  }
+  @keyframes scale {
+     0% {
+      transform: scale(1,1)
+     }
+    50%{
+       transform: scale(1,1)
+    }
+    90%{
+       transform: scale(1,1.8)
+    }
+    100% {
+     
+       transform: scale(1,1.8)
+    }
+  }
+    

@@ -1,0 +1,45 @@
+body{
+    background: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height:100vh;
+    font-family: Georgia, serif;
+  }
+  .father{
+    width:50%;
+    height:80%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .Colors{
+    width:42%;
+    height:43%;
+    border:5px solid white;
+  }
+  div.Colors:nth-child(1){
+    background: #FF6347 ;
+  }
+  div.Colors:nth-child(2){
+    background: #008080 ;
+  }
+  div.Colors:nth-child(3){
+    background: #DEB887 ;
+  }
+  div.Colors:nth-child(4){
+    background: #D7bfd7 ;
+  }
+  
+  .logo{
+    position: static;
+    margin-top : 10%;
+    background: white;
+    width:100%;
+    height:40%;
+    display: block;
+    padding-top: 1px ;
+  }
+  
+  
